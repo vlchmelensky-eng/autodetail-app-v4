@@ -35,3 +35,5 @@ jobs:
         with:
           name: autodetail-aplikace-apk
           path: build/apk/*.apk
+      - name: Accept Android licenses
+        run: yes | sdkmanager --licenses || true    
