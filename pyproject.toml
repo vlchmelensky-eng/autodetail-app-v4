@@ -1,0 +1,19 @@
+[project]
+name = "autodetail-app-v4"
+version = "4.0.0"
+description = "Aplikace pro vyuctovani servisu a detailingu"
+dependencies = [
+    "flet",
+    "flet-runtime",
+    "reportlab",
+    "requests"
+]
+
+[tool.flet.app]
+path = "."
+assets_dir = "assets"
+
+[tool.flet.android]
+package = "cz.servis.detailing4"
+build_target_abi = "arm64-v8a"
+icon = "assets/icon.png"
